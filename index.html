@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen zu Meinem Projekt</h1>
+        <button class="menu-btn"><i class="fas fa-bars"></i></button> <!-- Hamburger-Symbol -->
+    
+    <nav>
+        <button class="menu-btn"><i class="fas fa-bars"></i></button>
+        <ul>
+            <li><a href="index">Startseite</a></li>
+            <li><a href="about">Über uns</a></li>
+            <li><a href="contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Über Uns</h2>
+            <p>Hier kannst du eine kurze Beschreibung über dein Projekt einfügen.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mein Projekt</p>
+    </footer>
+
+    <!-- JavaScript für die Navigation ohne .html -->
+    <script>
+        window.onload = function() {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.href += '.html';
+            });
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kontakt</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index">Startseite</a></li>
+            <li><a href="about">Über uns</a></li>
+            <li><a href="contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Impressum</h2>
+            <p>Hier kannst du dein Impressum einfügen.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mein Projekt</p>
+    </footer>
+
+    <!-- JavaScript für die Navigation ohne .html -->
+    <script>
+        window.onload = function() {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.href += '.html';
+            });
+        };
+    </script>
+</body>
+</html>
