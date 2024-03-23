@@ -1,0 +1,69 @@
+/* Globale Stile */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex 1;
+  justify-content: stretch;
+}
+
+/* Header-Stile */
+#navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Hauptinhalt-Stile */
+#m1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#left-container,
+#middle-container,
+#right-container {
+  flex-grow: 1; /* Füllen Sie den verfügbaren Platz aus */
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tabellen-Stile */
+table {
+  border-collapse: collapse;
+  width: 100%; /* Verwenden Sie die volle Breite des Containers */
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #b1e0b5;
+}
+
+tr:hover {
+  background-color: #5a855d;
+}
